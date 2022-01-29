@@ -1,9 +1,9 @@
 from turtle import Turtle
 
 # ------- Ukraine -------
-def ukraine(flag: Turtle):
-	width = 600
-	height = 400
+def ukraine(flag: Turtle, unit: int):
+	width = 3 * unit
+	height = 2 * unit
 
 	# Drawing the blue rectangle
 	flag.color(0, 87, 183)
@@ -38,9 +38,9 @@ def ukraine(flag: Turtle):
 	flag.end_fill()
 
 # ------- Indonesia -------
-def indonesia(flag: Turtle):
-	width = 600
-	height = 400
+def indonesia(flag: Turtle, unit: int):
+	width = 3 * unit
+	height = 2 * unit
 
 	# Drawing the red rectangle
 	flag.color(239, 51, 60)
