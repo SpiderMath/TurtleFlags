@@ -112,3 +112,63 @@ def poland(flag: Turtle, height: int):
 	flag.forward(width / 2)
 
 	flag.end_fill()
+
+
+# ------- Russia -------
+def russia(flag: Turtle, height: int):
+	if not height: height = 400
+	width = int(1.5 * height)
+
+	# Setting up
+	flag.up()
+	flag.goto(width / 2, height / 6)
+	flag.down()
+
+	# Drawing the white rectangle
+	flag.color(255, 255, 255)
+	flag.begin_fill()
+
+	flag.left(90)
+	flag.forward(height / 3)
+	flag.left(90)
+	flag.forward(width)
+	flag.left(90)
+	flag.forward(height / 3)
+	flag.left(90)
+	flag.forward(width)
+
+	flag.end_fill()
+
+	# Drawing the blue rectangle
+	flag.color(28, 53, 120)
+	flag.begin_fill()
+
+	flag.right(90)
+	flag.forward(height / 3)
+	flag.right(90)
+	flag.forward(width)
+	flag.right(90)
+	flag.forward(height / 3)
+	flag.right(90)
+	flag.forward(width)
+
+	flag.end_fill()
+
+	# Drawing the red rectangle
+	flag.up()
+	flag.goto(width / 2, -1 * (height / 6))
+	flag.down()
+
+	flag.color(228, 24, 28)
+	flag.begin_fill()
+
+	flag.right(90)
+	flag.forward(height / 3)
+	flag.right(90)
+	flag.forward(width)
+	flag.right(90)
+	flag.forward(height / 3)
+	flag.right(90)
+	flag.forward(width)
+
+	flag.end_fill()
