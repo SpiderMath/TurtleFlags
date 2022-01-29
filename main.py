@@ -9,7 +9,7 @@ yellow = "\x1b[93m"
 blue = "\x1b[94m"
 reset = "\x1b[0m"
 # Not sure why I'll need a traffic signal but hey!
-list_of_supported_countries = ["indonesia", "ukraine"]
+list_of_supported_countries = ["indonesia", "ukraine", "poland"]
 
 
 print(f"{blue}Hello there 👋")
@@ -20,15 +20,15 @@ if not country_input in list_of_supported_countries:
 	exit()
 
 
-unit = input(f"{yellow}Please enter the base unit of the flag (Optional): {red}").replace(" ", "")
+height = input(f"{yellow}Please enter the height of the flag (Optional): {red}").replace(" ", "")
 
-if len(unit) == 0:
-	unit = 200
+if len(height) == 0:
+	height = None
 else:
 	try:
-		unit = int(unit)
+		height = int(height)
 	except:
-		print(f"Invalid unit provided. Please provide a number as the unit, else do not (default value = 100)")
+		print(f"Invalid height provided. Please provide a number as the height, else do not (default value = 100)")
 		exit()
 
 
@@ -38,9 +38,11 @@ turtle.Screen().colormode(255)
 turtle.bgcolor("black")
 
 if country_input == "ukraine":
-	flags.ukraine(flag, unit)
+	flags.ukraine(flag, height)
 elif country_input == "indonesia":
-	flags.indonesia(flag, unit)
+	flags.indonesia(flag, height)
+elif country_input == "poland":
+	flags.poland(flag, height)
 
 
 turtle.done()
