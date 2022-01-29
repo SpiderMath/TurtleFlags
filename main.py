@@ -15,13 +15,13 @@ print(f"{blue}Hello there 👋")
 print(f"{blue}A {yellow}🔥 warm 🔥{blue} welcome to {green}🐢 Turtle Flags {reset}!")
 country_input = input(f"{yellow}Please enter the country's flag you want to see: {red}").lower()
 flag = turtle.Turtle()
-
+turtle.Screen().colormode(255)
+turtle.bgcolor("black")
 
 if country_input == "ukraine":
-	width = 600
-	height = 400
-
 	flags.ukraine(flag)
+elif country_input == "indonesia":
+	flags.indonesia(flag)
 
 
 turtle.done()
