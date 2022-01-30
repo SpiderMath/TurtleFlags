@@ -592,3 +592,64 @@ def lithuania(pen: Turtle, height: int):
 	pen.forward(width)
 
 	pen.end_fill()
+
+
+# ------- Luxembourg -------
+def luxembourg(pen: Turtle, height: int):
+	if not height: height = 390
+	width = (5 / 3) * height
+
+	# Colors
+	blue = (81, 173, 218)
+	white = (255, 255, 255)
+	red = (234, 20, 29)
+
+	# Setting up
+	pen.up()
+	pen.goto(width / 2, height / 2)
+	pen.down()
+
+	# Drawing the blue rectangle
+	pen.color(blue)
+	pen.begin_fill()
+
+	pen.right(90)
+	pen.forward(height)
+	pen.right(90)
+	pen.forward(width)
+	pen.right(90)
+	pen.forward(height)
+	pen.right(90)
+	pen.forward(width)
+
+	pen.end_fill()
+
+	# Drawing the white rectangle
+	pen.color(white)
+	pen.begin_fill()
+
+	pen.right(90)
+	pen.forward(height * (2 / 3))
+	pen.right(90)
+	pen.forward(width)
+	pen.right(90)
+	pen.forward(height * (2 / 3))
+	pen.right(90)
+	pen.forward(width)
+
+	pen.end_fill()
+
+	# Drawing the red rectangle
+	pen.color(red)
+	pen.begin_fill()
+
+	pen.right(90)
+	pen.forward(height / 3)
+	pen.right(90)
+	pen.forward(width)
+	pen.right(90)
+	pen.forward(height / 3)
+	pen.right(90)
+	pen.forward(width)
+
+	pen.end_fill()
