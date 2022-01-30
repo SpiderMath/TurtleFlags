@@ -9,7 +9,7 @@ yellow = "\x1b[93m"
 blue = "\x1b[94m"
 reset = "\x1b[0m"
 # Not sure why I'll need a traffic signal but hey!
-list_of_supported_countries = ["indonesia", "ukraine", "poland", "russia", "romania", "chad", "france", "ireland", "colombia"]
+list_of_supported_countries = ["indonesia", "ukraine", "poland", "russia", "romania", "chad", "france", "ireland", "colombia", "estonia"]
 
 
 print(f"{blue}Hello there 👋")
@@ -33,29 +33,31 @@ else:
 
 
 # Some stuff I gotta define
-flag = turtle.Turtle()
+pen = turtle.Turtle()
 turtle.Screen().colormode(255)
-turtle.bgcolor("black")
+turtle.bgcolor((0, 0, 0))
 
 if country_input == "ukraine":
-	flags.ukraine(flag, height)
+	flags.ukraine(pen, height)
 elif country_input == "indonesia":
-	flags.indonesia(flag, height)
+	flags.indonesia(pen, height)
 elif country_input == "poland":
-	flags.poland(flag, height)
+	flags.poland(pen, height)
 elif country_input == "russia":
-	flags.russia(flag, height)
+	flags.russia(pen, height)
 elif country_input == "romania":
-	flags.romania(flag, height)
+	flags.romania(pen, height)
 elif country_input == "chad":
-	flags.chad(flag, height)
+	flags.chad(pen, height)
 elif country_input == "france":
-	flags.france(flag, height)
+	flags.france(pen, height)
 elif country_input == "ireland":
-	flags.ireland(flag, height)
+	flags.ireland(pen, height)
 elif country_input == "colombia":
-	flags.colombia(flag, height)
+	flags.colombia(pen, height)
+elif country_input == "estonia":
+	flags.estonia(pen, height)
 
 # Finishing stuff
-flag.hideturtle()
+pen.hideturtle()
 turtle.done()

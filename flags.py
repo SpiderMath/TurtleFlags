@@ -459,3 +459,75 @@ def colombia(pen: Turtle, height: int):
 	pen.forward(width / 2)
 
 	pen.end_fill()
+
+
+# ------- Estonia -------
+def estonia(pen: Turtle, height: int):
+	if not height: height = 350
+	width = (11 / 7) * height
+
+	# Colors
+	blue = (0, 114, 206)
+	black = (0, 0, 0)
+	white = (255, 255, 255)
+
+	# Setting up
+	pen.up()
+	pen.goto(width / 2, height / 2)
+	pen.down()
+
+	# Drawing the white rectangle
+	pen.color(white)
+	pen.begin_fill()
+
+	pen.right(90)
+	pen.forward(height)
+	pen.right(90)
+	pen.forward(width)
+	pen.right(90)
+	pen.forward(height)
+	pen.right(90)
+	pen.forward(width)
+
+	pen.end_fill()
+
+	# Drawing the black rectangle
+	pen.color(black)
+	pen.begin_fill()
+
+	pen.right(90)
+	pen.forward(height * (2 / 3))
+	pen.right(90)
+	pen.forward(width)
+	pen.right(90)
+	pen.forward(height * (2 / 3))
+	pen.right(90)
+	pen.forward(width)
+
+	pen.end_fill()
+
+	# Drawing the blue rectangle
+	pen.color(blue)
+	pen.begin_fill()
+
+	pen.right(90)
+	pen.forward(height / 3)
+	pen.right(90)
+	pen.forward(width)
+	pen.right(90)
+	pen.forward(height / 3)
+	pen.right(90)
+	pen.forward(width)
+
+	pen.end_fill()
+
+	# Separating background from flag
+	pen.color(white)
+	pen.right(90)
+	pen.forward(height)
+	pen.right(90)
+	pen.forward(width)
+	pen.right(90)
+	pen.forward(height)
+	pen.right(90)
+	pen.forward(width)
