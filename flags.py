@@ -6,8 +6,12 @@ def ukraine(pen: Turtle, height: int):
 	if not height: height = 400
 	width = 1.5 * height
 
+	# Colors
+	blue = (0, 87, 183)
+	yellow = (255, 221, 0)
+
 	# Drawing the blue rectangle
-	pen.color(0, 87, 183)
+	pen.color(blue)
 	pen.begin_fill()
 
 	pen.forward(width / 2)
@@ -23,7 +27,7 @@ def ukraine(pen: Turtle, height: int):
 	pen.end_fill()
 
 	# Drawing the yellow rectangle
-	pen.color(255, 221, 0)
+	pen.color(yellow)
 	pen.begin_fill()
 
 	pen.forward(width / 2)
@@ -44,8 +48,12 @@ def indonesia(pen: Turtle, height: int):
 	if not height: height = 400
 	width = 1.5 * height
 
+	# Colors
+	red = (239, 51, 60)
+	white = (255, 255, 255)
+
 	# Drawing the red rectangle
-	pen.color(239, 51, 60)
+	pen.color(red)
 	pen.begin_fill()
 
 	pen.forward(width / 2)
@@ -61,7 +69,7 @@ def indonesia(pen: Turtle, height: int):
 	pen.end_fill()
 
 	# Drawing the white rectangle
-	pen.color(255, 255, 255)
+	pen.color(white)
 	pen.begin_fill()
 
 	pen.forward(width / 2)
@@ -80,10 +88,14 @@ def indonesia(pen: Turtle, height: int):
 # ------- Poland -------
 def poland(pen: Turtle, height: int):
 	if not height: height = 500
-	width = int(1.6 * height)
+	width = 1.6 * height
+
+	# Colors
+	white = (255, 255, 255)
+	red = (210, 39, 48)
 
 	# Drawing the white rectangle
-	pen.color(255, 255, 255)
+	pen.color(white)
 	pen.begin_fill()
 
 	pen.forward(width / 2)
@@ -99,7 +111,7 @@ def poland(pen: Turtle, height: int):
 	pen.end_fill()
 
 	# Drawing the red rectangle
-	pen.color(210, 39, 48)
+	pen.color(red)
 	pen.begin_fill()
 
 	pen.forward(width / 2)
@@ -120,13 +132,18 @@ def russia(pen: Turtle, height: int):
 	if not height: height = 400
 	width = 1.5 * height
 
+	# Colors
+	red = (228, 24, 28)
+	blue = (28, 53, 120)
+	white = (255, 255, 255)
+
 	# Setting up
 	pen.up()
 	pen.goto(width / 2, height / 2)
 	pen.down()
 
 	# Drawing red rectangle
-	pen.color(228, 24, 28)
+	pen.color(red)
 	pen.begin_fill()
 
 	pen.right(180)
@@ -141,7 +158,7 @@ def russia(pen: Turtle, height: int):
 	pen.end_fill()
 
 	# Drawing the blue rectangle
-	pen.color(28, 53, 120)
+	pen.color(blue)
 	pen.begin_fill()
 
 	pen.left(90)
@@ -156,7 +173,7 @@ def russia(pen: Turtle, height: int):
 	pen.end_fill()
 
 	# Drawing the white rectangle
-	pen.color(255, 255, 255)
+	pen.color(white)
 	pen.begin_fill()
 
 	pen.left(90)
@@ -175,6 +192,8 @@ def russia(pen: Turtle, height: int):
 def romania(pen: Turtle, height: int):
 	if not height: height = 400
 	width = 1.5 * height
+
+	# Colors
 	blue = (0, 43, 127)
 	red = (206, 17, 38)
 	yellow = (252, 209, 22)
@@ -234,6 +253,8 @@ def romania(pen: Turtle, height: int):
 def chad(pen: Turtle, height: int):
 	if not height: height = 400
 	width = 1.5 * height
+
+	# Colors
 	blue = (0, 38, 100)
 	red = (198, 12, 48)
 	yellow = (254, 203, 0)
@@ -293,6 +314,8 @@ def chad(pen: Turtle, height: int):
 def france(pen: Turtle, height: int):
 	if not height: height = 400
 	width = 1.5 * height
+
+	# Colors
 	blue = (0, 35, 149)
 	white = (255, 255, 255)
 	red = (237, 41, 57)
@@ -352,6 +375,8 @@ def france(pen: Turtle, height: int):
 def ireland(pen: Turtle, height: int):
 	if not height: height = 400
 	width = 2 * height
+
+	# Colors
 	green = (0, 154, 68)
 	white = (255, 255, 255)
 	orange = (255, 130, 0)
@@ -412,8 +437,13 @@ def colombia(pen: Turtle, height: int):
 	if not height: height = 400
 	width = 1.5 * height
 
+	# Colors
+	yellow = (255, 205, 0)
+	red = (200, 16, 46)
+	blue = (0, 48, 135)
+
 	# Drawing the yellow rectangle
-	pen.color(255, 205, 0)
+	pen.color(yellow)
 	pen.begin_fill()
 
 	pen.forward(width / 2)
@@ -429,7 +459,7 @@ def colombia(pen: Turtle, height: int):
 	pen.end_fill()
 
 	# Drawing the red rectangle
-	pen.color(200, 16, 46)
+	pen.color(red)
 	pen.begin_fill()
 
 	pen.forward(width / 2)
@@ -445,7 +475,7 @@ def colombia(pen: Turtle, height: int):
 	pen.end_fill()
 
 	# Drawing the blue rectangle
-	pen.color(0, 48, 135)
+	pen.color(blue)
 	pen.begin_fill()
 
 	pen.forward(width / 2)
