@@ -234,57 +234,57 @@ def romania(pen: Turtle, height: int):
 def chad(pen: Turtle, height: int):
 	if not height: height = 400
 	width = 1.5 * height
+	blue = (0, 38, 100)
+	red = (198, 12, 48)
+	yellow = (254, 203, 0)
 
 	# Setting up
 	pen.up()
-	pen.goto(-1 * (width / 6), height / 2)
+	pen.goto(width / 2, height / 2)
 	pen.down()
 
-	# Drawing blue rectangle
-	pen.color(0, 38, 100)
+	# Drawing the blue rectangle
+	pen.color(blue)
 	pen.begin_fill()
 
 	pen.right(90)
 	pen.forward(height)
 	pen.right(90)
-	pen.forward(width / 3)
+	pen.forward(width)
 	pen.right(90)
 	pen.forward(height)
 	pen.right(90)
-	pen.forward(width / 3)
+	pen.forward(width)
 
 	pen.end_fill()
 
 	# Drawing the yellow rectangle
-	pen.color(254, 203, 0)
+	pen.color(yellow)
 	pen.begin_fill()
 
-	pen.forward(width / 3)
 	pen.right(90)
 	pen.forward(height)
 	pen.right(90)
-	pen.forward(width / 3)
+	pen.forward(width * (2 / 3))
 	pen.right(90)
 	pen.forward(height)
+	pen.right(90)
+	pen.forward(width * (2 / 3))
 
 	pen.end_fill()
 
 	# Drawing the red rectangle
-	pen.up()
-	pen.goto(width / 6, height / 2)
-	pen.down()
-
-	pen.color(198, 12, 48)
+	pen.color(red)
 	pen.begin_fill()
 
 	pen.right(90)
-	pen.forward(width / 3)
-	pen.right(90)
 	pen.forward(height)
 	pen.right(90)
 	pen.forward(width / 3)
 	pen.right(90)
 	pen.forward(height)
+	pen.right(90)
+	pen.forward(width / 3)
 
 	pen.end_fill()
 
@@ -293,57 +293,57 @@ def chad(pen: Turtle, height: int):
 def france(pen: Turtle, height: int):
 	if not height: height = 400
 	width = 1.5 * height
+	blue = (0, 35, 149)
+	white = (255, 255, 255)
+	red = (237, 41, 57)
 
 	# Setting up
 	pen.up()
-	pen.goto(-1 * (width / 6), height / 2)
+	pen.goto(width / 2, height / 2)
 	pen.down()
 
-	# Drawing blue rectangle
-	pen.color(0, 35, 149)
+	# Drawing the blue rectangle
+	pen.color(blue)
 	pen.begin_fill()
 
 	pen.right(90)
 	pen.forward(height)
 	pen.right(90)
-	pen.forward(width / 3)
+	pen.forward(width)
 	pen.right(90)
 	pen.forward(height)
 	pen.right(90)
-	pen.forward(width / 3)
+	pen.forward(width)
 
 	pen.end_fill()
 
 	# Drawing the white rectangle
-	pen.color(255, 255, 255)
+	pen.color(white)
 	pen.begin_fill()
 
-	pen.forward(width / 3)
 	pen.right(90)
 	pen.forward(height)
 	pen.right(90)
-	pen.forward(width / 3)
+	pen.forward(width * (2 / 3))
 	pen.right(90)
 	pen.forward(height)
+	pen.right(90)
+	pen.forward(width * (2 / 3))
 
 	pen.end_fill()
 
 	# Drawing the red rectangle
-	pen.up()
-	pen.goto(width / 6, height / 2)
-	pen.down()
-
-	pen.color(237, 41, 57)
+	pen.color(red)
 	pen.begin_fill()
 
 	pen.right(90)
-	pen.forward(width / 3)
-	pen.right(90)
 	pen.forward(height)
 	pen.right(90)
 	pen.forward(width / 3)
 	pen.right(90)
 	pen.forward(height)
+	pen.right(90)
+	pen.forward(width / 3)
 
 	pen.end_fill()
 
@@ -352,57 +352,57 @@ def france(pen: Turtle, height: int):
 def ireland(pen: Turtle, height: int):
 	if not height: height = 400
 	width = 2 * height
+	green = (0, 154, 68)
+	white = (255, 255, 255)
+	orange = (255, 130, 0)
 
 	# Setting up
 	pen.up()
-	pen.goto(-1 * (width / 6), height / 2)
+	pen.goto(width / 2, height / 2)
 	pen.down()
 
-	# Drawing green rectangle
-	pen.color(0, 154, 68)
+	# Drawing the green rectangle
+	pen.color(green)
 	pen.begin_fill()
 
 	pen.right(90)
 	pen.forward(height)
 	pen.right(90)
-	pen.forward(width / 3)
+	pen.forward(width)
 	pen.right(90)
 	pen.forward(height)
 	pen.right(90)
-	pen.forward(width / 3)
+	pen.forward(width)
 
 	pen.end_fill()
 
 	# Drawing the white rectangle
-	pen.color(255, 255, 255)
+	pen.color(white)
 	pen.begin_fill()
 
-	pen.forward(width / 3)
 	pen.right(90)
 	pen.forward(height)
 	pen.right(90)
-	pen.forward(width / 3)
+	pen.forward(width * (2 / 3))
 	pen.right(90)
 	pen.forward(height)
+	pen.right(90)
+	pen.forward(width * (2 / 3))
 
 	pen.end_fill()
 
 	# Drawing the orange rectangle
-	pen.up()
-	pen.goto(width / 6, height / 2)
-	pen.down()
-
-	pen.color(255, 130, 0)
+	pen.color(orange)
 	pen.begin_fill()
 
 	pen.right(90)
-	pen.forward(width / 3)
-	pen.right(90)
 	pen.forward(height)
 	pen.right(90)
 	pen.forward(width / 3)
 	pen.right(90)
 	pen.forward(height)
+	pen.right(90)
+	pen.forward(width / 3)
 
 	pen.end_fill()
 
