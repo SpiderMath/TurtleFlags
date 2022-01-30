@@ -531,3 +531,64 @@ def estonia(pen: Turtle, height: int):
 	pen.forward(height)
 	pen.right(90)
 	pen.forward(width)
+
+
+# ------- Lithuania -------
+def lithuania(pen: Turtle, height: int):
+	if not height: height = 390
+	width = (5 / 3) * height
+
+	# Colors
+	red = (190, 58, 52)
+	green = (4, 106, 56)
+	yellow = (255, 184, 28)
+
+	# Setting up
+	pen.up()
+	pen.goto(width / 2, height / 2)
+	pen.down()
+
+	# Drawing the red rectangle
+	pen.color(red)
+	pen.begin_fill()
+
+	pen.right(90)
+	pen.forward(height)
+	pen.right(90)
+	pen.forward(width)
+	pen.right(90)
+	pen.forward(height)
+	pen.right(90)
+	pen.forward(width)
+
+	pen.end_fill()
+
+	# Drawing the green rectangle
+	pen.color(green)
+	pen.begin_fill()
+
+	pen.right(90)
+	pen.forward(height * (2 / 3))
+	pen.right(90)
+	pen.forward(width)
+	pen.right(90)
+	pen.forward(height * (2 / 3))
+	pen.right(90)
+	pen.forward(width)
+
+	pen.end_fill()
+
+	# Drawing the yellow rectangle
+	pen.color(yellow)
+	pen.begin_fill()
+
+	pen.right(90)
+	pen.forward(height / 3)
+	pen.right(90)
+	pen.forward(width)
+	pen.right(90)
+	pen.forward(height / 3)
+	pen.right(90)
+	pen.forward(width)
+
+	pen.end_fill()

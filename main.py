@@ -9,7 +9,7 @@ yellow = "\x1b[93m"
 blue = "\x1b[94m"
 reset = "\x1b[0m"
 # Not sure why I'll need a traffic signal but hey!
-list_of_supported_countries = ["indonesia", "ukraine", "poland", "russia", "romania", "chad", "france", "ireland", "colombia", "estonia"]
+list_of_supported_countries = ["indonesia", "ukraine", "poland", "russia", "romania", "chad", "france", "ireland", "colombia", "estonia", "lithuania"]
 
 
 print(f"{blue}Hello there 👋")
@@ -57,6 +57,8 @@ elif country_input == "colombia":
 	flags.colombia(pen, height)
 elif country_input == "estonia":
 	flags.estonia(pen, height)
+elif country_input == "lithuania":
+	flags.lithuania(pen, height)
 
 # Finishing stuff
 pen.hideturtle()
