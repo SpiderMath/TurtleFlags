@@ -349,3 +349,62 @@ def france(flag: Turtle, height: int):
 	flag.forward(height)
 
 	flag.end_fill()
+
+
+# ------- Ireland -------
+def ireland(flag: Turtle, height: int):
+	if not height: height = 400
+	width = 2 * height
+
+	# Setting up
+	flag.up()
+	flag.goto(-1 * (width / 6), height / 2)
+	flag.down()
+
+	# Drawing green rectangle
+	flag.color(0, 154, 68)
+	flag.begin_fill()
+
+	flag.right(90)
+	flag.forward(height)
+	flag.right(90)
+	flag.forward(width / 3)
+	flag.right(90)
+	flag.forward(height)
+	flag.right(90)
+	flag.forward(width / 3)
+
+	flag.end_fill()
+
+	# Drawing the white rectangle
+	flag.color(255, 255, 255)
+	flag.begin_fill()
+
+	flag.forward(width / 3)
+	flag.right(90)
+	flag.forward(height)
+	flag.right(90)
+	flag.forward(width / 3)
+	flag.right(90)
+	flag.forward(height)
+
+	flag.end_fill()
+
+	# Drawing the orange rectangle
+	flag.up()
+	flag.goto(width / 6, height / 2)
+	flag.down()
+
+	flag.color(255, 130, 0)
+	flag.begin_fill()
+
+	flag.right(90)
+	flag.forward(width / 3)
+	flag.right(90)
+	flag.forward(height)
+	flag.right(90)
+	flag.forward(width / 3)
+	flag.right(90)
+	flag.forward(height)
+
+	flag.end_fill()
