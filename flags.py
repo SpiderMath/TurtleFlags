@@ -1,5 +1,6 @@
 from turtle import Turtle
 
+
 # ------- Ukraine -------
 def ukraine(flag: Turtle, height: int):
 	if not height: height = 400
@@ -406,5 +407,59 @@ def ireland(flag: Turtle, height: int):
 	flag.forward(width / 3)
 	flag.right(90)
 	flag.forward(height)
+
+	flag.end_fill()
+
+
+# ------- Colombia -------
+def colombia(flag: Turtle, height: int):
+	if not height: height = 400
+	width = 1.5 * height
+
+	# Drawing the yellow rectangle
+	flag.color(255, 205, 0)
+	flag.begin_fill()
+
+	flag.forward(width / 2)
+	flag.left(90)
+	flag.forward(height / 2)
+	flag.left(90)
+	flag.forward(width)
+	flag.left(90)
+	flag.forward(height / 2)
+	flag.left(90)
+	flag.forward(width / 2)
+
+	flag.end_fill()
+
+	# Drawing the red rectangle
+	flag.color(200, 16, 46)
+	flag.begin_fill()
+
+	flag.forward(width / 2)
+	flag.right(90)
+	flag.forward(height / 2)
+	flag.right(90)
+	flag.forward(width)
+	flag.right(90)
+	flag.forward(height / 2)
+	flag.right(90)
+	flag.forward(width / 2)
+
+	flag.end_fill()
+
+	# Drawing the blue rectangle
+	flag.color(0, 48, 135)
+	flag.begin_fill()
+
+	flag.forward(width / 2)
+	flag.right(90)
+	flag.forward(height / 4)
+	flag.right(90)
+	flag.forward(width)
+	flag.right(90)
+	flag.forward(height / 4)
+	flag.right(90)
+	flag.forward(width / 2)
 
 	flag.end_fill()
